@@ -2,6 +2,7 @@ const mongoose=require('mongoose');
 const Schema = mongoose.Schema;
 
 const ProductosSchema = new Schema({
+    // Este es el construtor del producto
     referencia:{type: String, required: true, max:10},
     nombre:{type: String, required: true, max:40},
     descripcion:{type: String, required: true, max:200},
